@@ -26,7 +26,7 @@ sudo btrfs send /mnt/data/home_backup | sudo btrfs receive /mnt/backup
 sudo btrfs subvolume list /mnt/data/
 sudo btrfs subvolume list /mnt/backup/
 
-# increment
+# increment backup
 sudo btrfs subvolume snapshot -r /mnt/data/home /mnt/data/home_backup_new
 sync
 sudo btrfs send -p /mnt/data/home_backup /mnt/data/home_backup_new | sudo btrfs receive /mnt/backup

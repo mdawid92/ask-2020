@@ -17,7 +17,7 @@ sudo btrfs subvolume list /data/
 ls -al /data/subvol
 ls -al /data/backups/subvol
 
-# delte test file
+# delete test file
 sudo rm /data/subvol/test_file_1
 
 ls -al /data/subvol
